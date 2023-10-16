@@ -1,0 +1,148 @@
+body {
+font-family: 'Courier New', Courier, monospace;
+height: 100%;
+width: 100%;
+overflow-x: hidden;
+overflow-y: hidden;
+background-repeat: no-repeat;
+background-attachment: fixed;
+font-size: 18px;
+cursor: grab;
+}
+
+#background {
+  z-index: -99;
+  position: absolute;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+span.writer {
+  font-family: PPwriter;
+}
+
+#clarity {
+  opacity: 1;
+  color: rgb(145, 145, 33);
+}
+
+body, main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin-right: 10px;
+  padding: 0px;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -9;
+}
+
+main {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+span {
+  font-size: medium;
+  opacity: 0.2; 
+  transition: opacity ease-in 200ms;
+  transition-delay: 100ms;
+}
+span.reminder{
+  opacity: 0.4;
+}
+span:hover{
+  opacity: 1; 
+  transition: opacity 50ms linear;
+}
+
+
+#bucket {
+  position: absolute;
+  z-index: -1;
+}
+
+footer {
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  text-align: center;
+  font-size: small;
+}
+
+#ball {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  mix-blend-mode: multiply;
+  z-index: 10;
+}
+
+#ball2{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -20px;
+  left: -50px;
+  mix-blend-mode: multiply;
+  z-index: 10;
+}
+
+#ball3{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -60px;
+  left: 20px;
+  mix-blend-mode: multiply;
+  z-index: 10;
+}
+
+.table_of_contents {
+  position: absolute;
+  top: 80vh;
+}
+
+#submission {
+  position: absolute;
+  top: 18vh;
+  left: 32vw
+}
+
+/* Mobile layout */
+#mobile{
+  width: 100vw;
+  height: 100vh;
+  background:white;
+  color: rgb(145, 145, 33);;
+  font-family: 'Courier New', Courier, monospace;
+  position: fixed;
+  top: 0; left: 0;
+  display: flex;
+  justify-content: center;
+flex-direction: column;
+  z-index: 999;
+  display: none;
+}
+
+#mobile p{
+  padding: 0 2em;
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  #mobile{
+    display: flex;
+  } 
+}

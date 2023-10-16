@@ -1,0 +1,33 @@
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background: rgba(255, 255, 255, 0.01) !important;
+}
+
+p {
+  position: absolute;
+  margin: 10px;
+} 
+img {
+  position: absolute;
+  z-index: -9;
+  margin: 0;
+}
+
+#closeness {
+  letter-spacing: -2px;
+  top: 30px;
+  margin: 30px;
+}
+
+#envelope {
+  position: absolute;
+  width: 100%;
+  z-index: -9;
+}
